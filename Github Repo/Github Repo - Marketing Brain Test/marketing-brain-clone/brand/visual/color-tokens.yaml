@@ -1,0 +1,131 @@
+# CIQ color tokens: machine-readable companion to color.md.
+# owner: brand · status: draft · last_reviewed: 2026-10-06
+# source: CIQ Brand Manual & Style Guide 2.0, pp. 49–50 (palette), 65–89 (product pillars)
+#
+# Steps run t25, t50 (tints of step 1, for background washes only), 1–4, then dark.
+# "bridge" = intermediate blend step (use more sparingly). "legacy" = from the prior
+# palette (use as needed). Their key names the steps they sit between, e.g. "2_3".
+# tier: primary | secondary | accent. Use accents only for small, high-impact details.
+
+roles:
+  galaxy: "#0A2028"          # core legacy brand dark; dark backgrounds, dark wordmark
+  almost_black: "#0C1728"    # default text, sans headlines
+  serif_headline: "#585858"  # Taupe 4, for IvyPresto headlines
+  white: "#FFFFFF"
+  page_light: "#F5F4F3"      # Taupe 1
+
+families:
+  lagoon:
+    tier: primary
+    t25: "#F1FEF7"
+    t50: "#E4FCEF"
+    "1": "#C9FADF"
+    "2": "#5DCBA2"
+    "3": "#368792"
+    "4": "#114753"
+    dark: "#0A2028"          # Galaxy
+    bridge: { "1_2": "#83E0C9" }
+    legacy: { "2_3": "#48A9B4", "3_4": "#2D7B81", "4_dark_a": "#14404F", "4_dark_b": "#0F303C" }
+  violet:
+    tier: primary
+    t25: "#FAF7FF"
+    t50: "#F5F0FF"
+    "1": "#EBE1FF"
+    "2": "#B09DE8"
+    "3": "#7F3BFF"
+    "4": "#4B2781"
+    dark: "#250547"
+    bridge: { "1_2": "#CEBFF3", "3_4": "#6531C0", "4_dark_a": "#3E1C6E", "4_dark_b": "#32105A" }
+    legacy: { "2_3": "#9867FF" }
+  hedge:
+    tier: primary
+    t25: "#F7FFEC"
+    t50: "#EFFFD9"
+    "1": "#E0FFB3"
+    "2": "#B5EF71"
+    "3": "#80BE45"
+    "4": "#338B4E"
+    dark: "#074F37"
+    bridge: { "3_4": "#5AA44A", "4_dark_a": "#247746", "4_dark_b": "#16633F" }
+    legacy: { "1_2": "#BFFFA0", "2_3": "#A6D741" }
+  slate:
+    tier: primary
+    t25: "#F9FBFC"
+    t50: "#F3F6F9"
+    "1": "#E8EEF4"
+    "2": "#A0AEC0"
+    "3": "#637084"
+    "4": "#2E3746"
+    dark: "#0C1728"          # Almost Black
+    bridge: { "2_3": "#828FA2", "3_4": "#495465", "4_dark_a": "#232C3C", "4_dark_b": "#172232" }
+    legacy: { "1_2": "#C4CEDA" }
+  cirrus:
+    tier: secondary
+    t25: "#FBFDFE"
+    t50: "#F7FBFD"
+    "1": "#F1F8FC"
+    "2": "#CAE8F9"
+    "3": "#9CF0F2"
+    "4": "#339EB8"
+    dark: "#076277"
+    bridge: { "2_3": "#C9E7F8", "3_4": "#66BECE", "4_dark_a": "#2589A1", "4_dark_b": "#167389" }
+    legacy: { "1_2": "#DDEEFF" }
+  taupe:
+    tier: secondary
+    t25: "#FCFCFC"
+    t50: "#F9F9F8"
+    "1": "#F5F4F3"
+    "2": "#DBD7D3"
+    "3": "#989490"
+    "4": "#585858"
+    dark: "#35302E"
+    bridge: { "2_3": "#B9B5B1", "3_4": "#797674", "4_dark_a": "#4C4B4A", "4_dark_b": "#413D3C" }
+    legacy: { "1_2": "#E4E2E0" }
+  berry:
+    tier: accent
+    t25: "#FFFCFB"
+    t50: "#FFFAF7"
+    "1": "#FFF5F0"
+    "2": "#F7D1BD"
+    "3": "#EDA9BF"
+    "4": "#D471E9"
+    dark: "#A223C1"
+    bridge: { "2_3": "#EFB6A6", "3_4": "#E891DB", "4_dark_a": "#C357DC", "4_dark_b": "#B33DCE" }
+    legacy: { "1_2": "#F9E7DD" }
+  citrus:
+    tier: accent
+    t25: "#FCFFF2"
+    t50: "#FAFFE5"
+    "1": "#F6FFCD"
+    "2": "#E6FF0C"
+    "3": "#F0B84E"
+    "4": "#FF6969"
+    dark: "#C64444"
+    bridge: { "2_3": "#EBDC2D", "4_dark_a": "#EC5D5D", "4_dark_b": "#D95050" }
+    legacy: { "1_2": "#EBFF6B", "3_4": "#F98D55" }
+
+# Product pillar palettes. Not self-service; see product-palettes.md.
+products:
+  incentives:
+    gradient: ["#E0FFB3", "#B5EF71", "#339EB8"]   # Hedge 1, Hedge 2, Cirrus 4
+    dark: "#074F37"                              # Hedge Dark
+  planning:
+    gradient: ["#EBE1FF", "#DD88CD", "#7F3BFF"]   # Violet 1, Berry 3.5 (bridge), Violet 3
+    dark: "#250547"                              # Violet Dark
+  catalyst:                                      # "Apricot" set, Catalyst only
+    gradient: ["#F4FFB7", "#FFD89C", "#F98D55"]   # Apricot 1, 2, 3
+    dark: "#3F1A07"                              # Apricot Dark
+  agents:
+    gradient: ["#B5EF71", "#7F3BFF", "#F98D55"]   # Hedge 2, Violet 3, Apricot 3
+    support: ["#339EB8", "#E0FFB3"]              # Cirrus 4, Hedge 1
+    dark: "#0A2028"                              # Galaxy
+  shared_type: ["#FFFFFF", "#F5F4F3", "#114753", "#0C1728"]  # White/Taupe 1, Lagoon 4, Almost Black
+
+# Text/background pairs the manual labels WCAG AAA (p. 59). Ratios computed by MOps.
+accessible_pairs:
+  - { bg: "#0A2028", fg: "#FFFFFF", ratio: 16.8 }
+  - { bg: "#F5F4F3", fg: "#0C1728", ratio: 16.4 }
+  - { bg: "#F1F8FC", fg: "#0C1728", ratio: 16.8 }
+  - { bg: "#B5EF71", fg: "#0C1728", ratio: 13.3 }
+  - { bg: "#114753", fg: "#FFFFFF", ratio: 10.2 }
+  - { bg: "#7F3BFF", fg: "#FFFFFF", ratio: 5.3, note: "AA only (AAA for large text); manual says AAA" }
